@@ -29,7 +29,7 @@
     "typescript": "^3.5.2"
   },
   "bundledDependencies": [
-    "modularscale-js",
-    "styled-components"
+    'modularscale-js',
+    'styled-components'
   ]
 }
