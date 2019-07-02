@@ -28,5 +28,5 @@
     "tslint-react-recommended": "^1.0.15",
     "typescript": "^3.5.2"
   },
-  "bundledDependencies": ['modularscale-js', 'styled-components']
+  "bundledDependencies": ["modularscale-js", "styled-components"]
 }
