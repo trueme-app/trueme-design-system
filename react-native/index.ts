@@ -1,5 +1,6 @@
 import {
   colours,
+  setUnits,
   spacing,
   typeScale,
   units,

@@ -1,10 +1,11 @@
 import colours from './colours'
 import spacing from './spacing'
 import typeScale from './typeScale'
-import units from './units'
+import { setUnits, units } from './units'
 
 export {
   colours,
+  setUnits,
   spacing,
   typeScale,
   units,
