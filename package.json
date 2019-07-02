@@ -1,0 +1,35 @@
+{
+  "name": "trueme-design-system",
+  "version": "1.0.0",
+  "main": "lib/index.ts",
+  "scripts": {
+    "build": "yarn build:react && yarn build:react-native",
+    "build:react": "babel react -o react.js --extensions \".ts\"",
+    "build:react-native": "babel react-native -o react-native.js --extensions \".ts\"",
+    "lint": "tslint lib/**/*.ts"
+  },
+  "repository": "https://github.com/trueme-app/trueme-design-system",
+  "author": "David Johnson",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "modularscale-js": "^3.0.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "tslint": "^5.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "tslint-react-recommended": "^1.0.15",
+    "typescript": "^3.5.2"
+  },
+  "bundledDependencies": [
+    "modularscale-js",
+    "styled-components"
+  ]
+}
