@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "main": "lib/index.ts",
   "scripts": {
-    "build": "yarn build:react && yarn build:react-native",
-    "build:react": "babel react -o react.js --extensions \".ts\"",
-    "build:react-native": "babel react-native -o react-native.js --extensions \".ts\"",
     "lint": "tslint lib/**/*.ts"
   },
   "repository": "https://github.com/trueme-app/trueme-design-system",
