@@ -1,14 +1,14 @@
 import { units } from './units'
 
 interface ISpacing {
-  xxs: number
-  xs: number
-  sm: number
-  default: number
-  md: number
-  lg: number
-  xl: number
-  xxl: number
+  xxs: string
+  xs: string
+  sm: string
+  default: string
+  md: string
+  lg: string
+  xl: string
+  xxl: string
 }
 
 const spacing: ISpacing = {

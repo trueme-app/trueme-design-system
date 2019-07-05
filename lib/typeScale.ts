@@ -1,3 +1,3 @@
-import ms from 'modularscale-js'
+const ms = require('modularscale-js')
 
-export const typeScale = ms
+export default ms
