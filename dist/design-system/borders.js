@@ -7,6 +7,6 @@ var borders = {
         md: "6" + units_1.units,
         lg: "9" + units_1.units,
         xl: "100" + units_1.units,
-    }
+    },
 };
 exports.default = borders;
