@@ -1,4 +1,5 @@
 import {
+  borders,
   colours,
   setUnits,
   spacing,
@@ -9,6 +10,7 @@ import {
 setUnits('px');
 
 export {
+  borders,
   colours,
   spacing,
   typeScale,
