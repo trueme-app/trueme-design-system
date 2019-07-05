@@ -1,4 +1,4 @@
-type Units = 'px' | 'em' | 'rem' | 'pt'
+type Units = 'px' | 'em' | 'rem' | 'pt' | null
 
 export let units: Units = 'px'
 

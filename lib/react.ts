@@ -5,7 +5,7 @@ import {
   spacing,
   typeScale,
   units,
-} from '../lib'
+} from './design-system'
 
 setUnits('px');
 
