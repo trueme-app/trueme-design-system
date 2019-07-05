@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "tslint lib/**/*.ts -t stylish"
+    "lint": "tslint src/**/*.ts -t stylish"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
