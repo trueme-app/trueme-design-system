@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "tslint lib/**/*.ts"
+    "lint": "tslint lib/**/*.ts -t stylish"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -20,6 +20,7 @@
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-typescript": "^7.3.3",
+    "trueme-tslint-config": "https://github.com/trueme-app/trueme-tslint-config",
     "tslint": "^5.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^4.0.0",

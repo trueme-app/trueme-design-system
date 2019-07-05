@@ -6,7 +6,7 @@ const borders = {
     md: `6${units}`,
     lg: `9${units}`,
     xl: `100${units}`,
-  }
+  },
 }
 
 export default borders
