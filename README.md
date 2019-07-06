@@ -1,4 +1,4 @@
-Trueme React Design System
+@trueme/design-system
 ===
 [![npm version](https://badge.fury.io/js/%40trueme%2Fdesign-system.svg)](https://badge.fury.io/js/%40trueme%2Fdesign-system) [![Build Status](https://travis-ci.org/trueme-app/trueme-design-system.svg?branch=master)](https://travis-ci.org/trueme-app/trueme-design-system)
 

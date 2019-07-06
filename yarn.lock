@@ -901,6 +901,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
+"@trueme/tslint-config@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@trueme/tslint-config/-/tslint-config-0.1.1.tgz#6fd98fa012e804f3c2fea7d6f77351f61a5352ab"
+  integrity sha512-toueRAKMdHfrcb5uXZcBc1z5OM4j34ie/W+3Rhbsvrx1+7pBLQQLWlVYEQzgX2azG7d0RmJD+QJgngq4Jy2wWg==
+
 "@types/babel__core@^7.1.0":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.2.tgz#608c74f55928033fce18b99b213c16be4b3d114f"
