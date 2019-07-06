@@ -1,16 +1,18 @@
 {
   "name": "@trueme/design-system",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "repository": "https://github.com/trueme-app/trueme-design-system",
   "author": "David Johnson <david@trueme.app>",
   "license": "MIT",
   "dependencies": {
+    "@types/jest": "^24.0.15",
     "@types/node": "^12.0.12",
     "modularscale-js": "^3.0.1"
   },
   "scripts": {
     "prepublish": "tsc",
     "build": "tsc",
+    "test": "jest --verbose --coverage",
     "lint": "tslint src/**/*.ts -t stylish",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
@@ -20,7 +22,9 @@
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-typescript": "^7.3.3",
+    "jest": "^24.8.0",
     "trueme-tslint-config": "https://github.com/trueme-app/trueme-tslint-config",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^4.0.0",
