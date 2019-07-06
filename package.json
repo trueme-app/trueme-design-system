@@ -1,6 +1,6 @@
 {
   "name": "@trueme/design-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "https://github.com/trueme-app/trueme-design-system",
   "author": "David Johnson <david@trueme.app>",
   "license": "MIT",
@@ -11,7 +11,9 @@
   "scripts": {
     "prepublish": "tsc",
     "build": "tsc",
-    "lint": "tslint src/**/*.ts -t stylish"
+    "lint": "tslint src/**/*.ts -t stylish",
+    "publish": "npm version patch && npm publish --access public",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
