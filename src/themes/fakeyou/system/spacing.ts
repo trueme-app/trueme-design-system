@@ -1,15 +1,5 @@
 import { units } from './units'
-
-interface ISpacing {
-  xxs: string
-  xs: string
-  sm: string
-  default: string
-  md: string
-  lg: string
-  xl: string
-  xxl: string
-}
+import { ISpacing } from '../../../types'
 
 const spacing: ISpacing = {
   xxs: `2${units}`,

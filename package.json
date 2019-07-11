@@ -1,14 +1,9 @@
 {
   "name": "@trueme/design-system",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "repository": "https://github.com/trueme-app/trueme-design-system",
   "author": "David Johnson <david@trueme.app>",
   "license": "MIT",
-  "dependencies": {
-    "@types/jest": "^24.0.15",
-    "@types/node": "^12.0.12",
-    "modularscale-js": "^3.0.1"
-  },
   "scripts": {
     "prepublish": "tsc",
     "build": "tsc",
@@ -23,12 +18,23 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-typescript": "^7.3.3",
     "@trueme/tslint-config": "^0.1.1",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.12",
     "jest": "^24.8.0",
+    "styled-components": "^4.3.2",
     "ts-jest": "^24.0.2",
     "tslint": "^5.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^4.0.0",
     "tslint-react-recommended": "^1.0.15",
     "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/styled-components": "^4.1.16",
+    "react": "^16.8.6"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.3.2"
   }
 }

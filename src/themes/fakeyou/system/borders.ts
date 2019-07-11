@@ -1,6 +1,7 @@
 import { units } from './units'
+import { IBorder } from '../../../types'
 
-const borders = {
+const borders: IBorder = {
   radius: {
     base: `3${units}`,
     md: `6${units}`,

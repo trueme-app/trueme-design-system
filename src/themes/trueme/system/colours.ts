@@ -1,14 +1,16 @@
-const colours: any = {
-  grey: {
+import { IColour } from '../../../types'
+
+const colours: IColour = {
+  primary: {
     base: '#F3F2EE',
     light: '#FAFAF9',
-    mid: '#979797',
+    dark: '#979797',
   },
-  green: {
+  secondary: {
     base: '#49C5B6',
     dark: '#09333E',
   },
-  rose: {
+  tertiary: {
     base: '#D95F76',
     dark: '#943143',
   },

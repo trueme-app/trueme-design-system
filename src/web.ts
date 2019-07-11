@@ -1,18 +1,8 @@
-import {
-  borders,
-  colours,
-  setUnits,
-  spacing,
-  typeScale,
-  units,
-} from './design-system'
+import system, { DesignSystemThemeProvider } from './system'
+const { setUnits, setTypeUnits } = system
 
-setUnits('px');
+setUnits('px')
+setTypeUnits('rem')
 
-export {
-  borders,
-  colours,
-  spacing,
-  typeScale,
-  units,
-}
+export default system
+export { DesignSystemThemeProvider }

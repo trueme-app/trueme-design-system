@@ -1,9 +1,15 @@
 "use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var design_system_1 = require("./design-system");
-exports.borders = design_system_1.borders;
-exports.colours = design_system_1.colours;
-exports.spacing = design_system_1.spacing;
-exports.typeScale = design_system_1.typeScale;
-exports.units = design_system_1.units;
-design_system_1.setUnits('px');
+var system_1 = __importStar(require("./system"));
+exports.DesignSystemThemeProvider = system_1.DesignSystemThemeProvider;
+var setUnits = system_1.default.setUnits, setTypeUnits = system_1.default.setTypeUnits;
+setUnits('px');
+setTypeUnits('rem');
+exports.default = system_1.default;
