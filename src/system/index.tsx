@@ -7,7 +7,7 @@ import { ISystem } from '../types'
 let currentTheme = 'trueme'
 
 const defaultTheme = trueme
-const themes: any = {
+export const themes: any = {
   trueme,
   fakeyou,
 }
@@ -17,8 +17,7 @@ export default themes[currentTheme]
 export const DesignSystemThemeProvider = (props: any) => {
   const theme = { ...defaultTheme, ...themes[props.theme] }
   currentTheme = props.theme
-  console.log(currentTheme)
-  console.log(theme)
+
   return (
     <ThemeProvider theme={theme}>
       {props.children}

@@ -12,6 +12,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "jsx": "react",
+    "sourceMap": true
   },
   "include": [
     "./src/*"

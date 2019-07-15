@@ -1,8 +1,8 @@
-import system, { DesignSystemThemeProvider } from './system'
+import system, { DesignSystemThemeProvider, themes } from './system'
 const { setUnits, setTypeUnits } = system
 
 setUnits(null)
 setTypeUnits(null)
 
 export default system
-export { DesignSystemThemeProvider }
+export { DesignSystemThemeProvider, themes }
