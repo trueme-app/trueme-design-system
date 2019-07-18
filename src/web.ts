@@ -6,3 +6,4 @@ setTypeUnits('rem')
 
 export default system
 export { DesignSystemThemeProvider, themes }
+export * from './types'

@@ -1,5 +1,6 @@
 export interface IBorder {
   radius: {
+    [key: string]: string,
     base: string,
     md: string,
     lg: string,
@@ -8,6 +9,7 @@ export interface IBorder {
 }
 
 export interface ISpacing {
+  [key: string]: string,
   xxs: string,
   xs: string,
   sm: string,
@@ -19,6 +21,7 @@ export interface ISpacing {
 }
 
 export interface IColourDefinition {
+  [key: string]: string | undefined,
   base: string,
   light?: string,
   lighter?: string,
@@ -27,6 +30,7 @@ export interface IColourDefinition {
 }
 
 export interface IColour {
+  [key: string]: IColourDefinition | string | undefined,
   background?: string,
   primary: IColourDefinition,
   secondary: IColourDefinition,
@@ -44,6 +48,7 @@ export interface ITypeDefinition {
 
 export interface ITypography {
   headings: {
+    [key: string]: ITypeDefinition | undefined,
     base?: ITypeDefinition,
     h1: ITypeDefinition,
     h2?: ITypeDefinition,
@@ -65,6 +70,10 @@ export interface ISystem {
   typography: ITypography,
   setTypeUnits: (value: Unit) => void,
   setUnits: (value: Unit) => void,
+}
+
+export interface ThemeProps {
+  theme: ISystem
 }
 
 export interface IFonts {
