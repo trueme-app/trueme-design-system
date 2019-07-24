@@ -1,9 +1,10 @@
 import system, { DesignSystemThemeProvider, themes } from './system'
-const { setUnits, setTypeUnits } = system
+const { setBorderUnits, setSpacingUnits, setTypeUnits } = system
 
-setUnits(null)
+setBorderUnits(null)
+setSpacingUnits(null)
 setTypeUnits(null)
 
-export default system
 export { DesignSystemThemeProvider, themes }
 export * from './types'
+export default system

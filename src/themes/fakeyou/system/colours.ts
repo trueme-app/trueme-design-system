@@ -1,18 +1,42 @@
 import { IColour } from '../../../types'
 
 const colours: IColour = {
+  background: '#f3f2ee',
   primary: {
-    base: '#F3F2EE',
-    light: '#FAFAF9',
-    dark: '#979797',
+    base: '#E57568',
+    light: '#EA9085',
+    lighter: '#EFACA4',
+    text: '#ffffff',
   },
   secondary: {
-    base: '#D95F76',
-    dark: '#943143',
+    base: '#F7DB79',
+    light: '#FCDA99',
+    lighter: '#FCE3B1',
+    text: '#000000',
   },
   tertiary: {
-    base: '#49C5B6',
-    dark: '#09333E',
+    base: '#09283E',
+    light: '#395365',
+    lighter: '#6B7E8B',
+    text: '#ffffff',
+  },
+  quaternary: {
+    base: '#CED6D8',
+    light: '#D8DEE0',
+    lighter: '#E2E6E8',
+    text: '#000000',
+  },
+  quinary: {
+    base: '#49c5b6',
+    light: '#6dd1c5',
+    lighter: '#92DCD3',
+    text: '#ffffff',
+  },
+  senary: {
+    base: '#066364',
+    light: '#388283',
+    lighter: '#6AA1A2',
+    text: '#ffffff',
   },
 }
 

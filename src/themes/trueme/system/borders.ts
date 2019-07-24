@@ -1,12 +1,19 @@
-import { units } from './units'
-import { IBorder } from '../../../types'
+import { IBorder, Unit } from '../../../types'
+
+let units: Unit = 'px'
+
+export const setBorderUnits = (value: Unit) => {
+  units = value
+}
+
+const getBorderUnits = (value: number) => `${value}${units}`
 
 const borders: IBorder = {
   radius: {
-    base: `3${units}`,
-    md: `6${units}`,
-    lg: `9${units}`,
-    xl: `100${units}`,
+    base: getBorderUnits(3),
+    md: getBorderUnits(6),
+    lg: getBorderUnits(9),
+    xl: getBorderUnits(100),
   },
 }
 

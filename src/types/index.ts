@@ -27,6 +27,7 @@ export interface IColourDefinition {
   lighter?: string,
   dark?: string,
   darker?: string,
+  text?: string,
 }
 
 export interface IColour {
@@ -36,6 +37,8 @@ export interface IColour {
   secondary: IColourDefinition,
   tertiary?: IColourDefinition,
   quaternary?: IColourDefinition,
+  quinary?: IColourDefinition,
+  senary?: IColourDefinition,
 }
 
 export interface ITypeDefinition {
@@ -68,8 +71,9 @@ export interface ISystem {
   colours: IColour,
   spacing: ISpacing,
   typography: ITypography,
+  setSpacingUnits: (value: Unit) => void,
+  setBorderUnits: (value: Unit) => void,
   setTypeUnits: (value: Unit) => void,
-  setUnits: (value: Unit) => void,
 }
 
 export interface ThemeProps {
@@ -82,5 +86,10 @@ export interface IFonts {
 }
 
 export type Unit = 'px' | 'em' | 'rem' | 'pt' | null
+
+export type UnitMap = {
+  spacingUnits: Unit,
+  typeUnits: Unit,
+}
 
 export type Theme = 'trueme'
