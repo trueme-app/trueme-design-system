@@ -1,16 +1,18 @@
 import { Unit } from '../types'
 
-let rootSize: number = 16
-let typeUnits: Unit = 'rem'
-let borderUnits: Unit = 'px'
-let spacingUnits: Unit = 'px'
+const units = {
+  rootSize: 16,
+  typeUnits: 'rem',
+  borderUnits: 'px',
+  spacingUnits: 'px',
+}
 
-export const getBorderUnits = (value: number) => `${value}${borderUnits}`
+export const getBorderUnits = (value: number) => `${value}${units.borderUnits}`
 
-export const getSpacingUnits = (value: number) => `${value}${spacingUnits}`
+export const getSpacingUnits = (value: number) => `${value}${units.spacingUnits}`
 
 export const getLineHeight = (value: number, fontSize: number) => {
-  switch(typeUnits) {
+  switch(units.typeUnits) {
     case 'rem':
       return value
     default:
@@ -19,26 +21,26 @@ export const getLineHeight = (value: number, fontSize: number) => {
 }
 
 export const getTypeSize = (value: number) => {
-  switch(typeUnits) {
+  switch(units.typeUnits) {
     case 'rem':
-      return `${parseFloat((value/rootSize).toFixed(3))}${typeUnits}`;
+      return `${parseFloat((value/units.rootSize).toFixed(3))}${units.typeUnits}`;
     default:
-      return `${value}${typeUnits}`;
+      return `${value}${units.typeUnits}`;
   }
 }
 
 export const setBorderUnits = (value: Unit) => {
-  borderUnits = value
+  units.borderUnits = value
 }
 
 export const setSpacingUnits = (value: Unit) => {
-  spacingUnits = value
+  units.spacingUnits = value
 }
 
 export const setTypeUnits = (value: Unit) => {
-  typeUnits = value
+  units.typeUnits = value
 }
 
 export const setRootSize = (value: number) => {
-  rootSize = value
+  units.rootSize = value
 }
