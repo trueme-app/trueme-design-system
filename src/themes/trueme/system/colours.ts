@@ -2,6 +2,8 @@ import { IColour } from '../../../types'
 
 const colours: IColour = {
   background: '#f3f2ee',
+  text: '#09333E',
+  inactive: '#CED6D8',
   primary: {
     base: '#49c5b6',
     light: '#6dd1c5',

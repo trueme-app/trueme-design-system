@@ -1,7 +1,11 @@
 export interface IBorder {
+  width: {
+    [key: string]: string,
+    default: string,
+  },
   radius: {
     [key: string]: string,
-    base: string,
+    default: string,
     md: string,
     lg: string,
     xl: string,
@@ -33,6 +37,8 @@ export interface IColourDefinition {
 export interface IColour {
   [key: string]: IColourDefinition | string | undefined,
   background?: string,
+  text?: string,
+  inactive?: string,
   primary: IColourDefinition,
   secondary: IColourDefinition,
   tertiary?: IColourDefinition,
@@ -71,9 +77,6 @@ export interface ISystem {
   colours: IColour,
   spacing: ISpacing,
   typography: ITypography,
-  setSpacingUnits: (value: Unit) => void,
-  setBorderUnits: (value: Unit) => void,
-  setTypeUnits: (value: Unit) => void,
 }
 
 export interface ThemeProps {
@@ -85,7 +88,7 @@ export interface IFonts {
   heading: string,
 }
 
-export type Unit = 'px' | 'em' | 'rem' | 'pt' | null
+export type Unit = 'px' | 'em' | 'rem' | 'pt' | ''
 
 export type UnitMap = {
   spacingUnits: Unit,

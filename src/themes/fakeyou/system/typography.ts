@@ -1,80 +1,47 @@
 import { IFonts, ITypography, Unit } from '../../../types'
-
-let units: Unit = 'px'
-
-const rootSize = 16
-
-export const setTypeUnits = (value: Unit) => {
-  units = value
-}
-
-const getLineHeight = (value: number) => {
-  switch(units) {
-    case 'rem':
-      return value
-    default:
-      return rootSize * value
-  }
-}
-
-const getTypeSize = (value: number) => {
-  switch(units) {
-    case 'rem':
-      return `${(value/rootSize).toFixed(2)}${units}`;
-    default:
-      return `${value}${units}`;
-  }
-}
-
+import { getLineHeight, getTypeSize } from '../../../system/units'
 
 const fonts: IFonts = {
   body: 'BentonSans',
-  heading: 'ButlerMedium',
+  heading: 'Butler',
 }
 
 const typography: ITypography = {
   headings: {
     h1: {
       font: fonts.heading,
-      size: getTypeSize(26),
+      size: getTypeSize(30),
       fontWeight: 600,
       letterSpacing: 1.14,
-      lineHeight: getLineHeight(1.16),
+      lineHeight: getLineHeight(1, 30),
     },
     h2: {
-      font: fonts.heading,
-      size: getTypeSize(22),
-      fontWeight: 600,
+      font: fonts.body,
+      size: getTypeSize(30),
+      fontWeight: 'normal',
       letterSpacing: 1.14,
-      lineHeight: getLineHeight(1.25),
+      lineHeight: getLineHeight(1.16, 30),
     },
     h3: {
       font: fonts.heading,
-      size: getTypeSize(20),
+      size: getTypeSize(16),
       fontWeight: 600,
       letterSpacing: 1.14,
-      lineHeight: getLineHeight(1.25),
+      lineHeight: getLineHeight(1.375, 16),
     },
     h4: {
       font: fonts.body,
-      size: getTypeSize(18),
+      size: getTypeSize(14),
       fontWeight: 600,
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.25),
+      lineHeight: getLineHeight(1.42, 14),
     },
     h5: {
       font: fonts.body,
-      size: getTypeSize(17),
+      size: getTypeSize(12),
       fontWeight: 600,
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.25),
-    },
-    h6: {
-      font: fonts.body,
-      size: getTypeSize(16),
-      fontWeight: 600,
-      letterSpacing: 0,
-      lineHeight: getLineHeight(1.25),
+      lineHeight: getLineHeight(1.5, 12),
     },
   },
   body: {
@@ -82,8 +49,15 @@ const typography: ITypography = {
       font: fonts.body,
       size: getTypeSize(14),
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.42),
+      lineHeight: getLineHeight(1.42, 14),
       fontWeight: 'normal',
+    },
+    bold: {
+      font: fonts.body,
+      size: getTypeSize(14),
+      letterSpacing: 0,
+      lineHeight: getLineHeight(1.42, 14),
+      fontWeight: 'bold',
     }
   }
 }

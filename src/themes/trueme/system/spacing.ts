@@ -1,12 +1,5 @@
 import { Unit, ISpacing } from '../../../types'
-
-let units: Unit = 'px'
-
-export const setSpacingUnits = (value: Unit) => {
-  units = value
-}
-
-const getSpacingUnits = (value: number) => `${value}${units}`
+import { getSpacingUnits } from '../../../system/units'
 
 const spacing: ISpacing = {
   xxs: getSpacingUnits(2),
