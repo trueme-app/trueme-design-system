@@ -22,11 +22,14 @@ export interface ISpacing {
   lg: string,
   xl: string,
   xxl: string,
+  xxxl: string,
+  xxxxl: string,
 }
 
 export interface IColourDefinition {
   [key: string]: string | undefined,
-  base: string,
+  base?: string,
+  background?: string,
   light?: string,
   lighter?: string,
   dark?: string,
@@ -39,6 +42,7 @@ export interface IColour {
   background?: string,
   text?: string,
   inactive?: string,
+  disabled?: IColourDefinition,
   primary: IColourDefinition,
   secondary: IColourDefinition,
   tertiary?: IColourDefinition,
@@ -90,7 +94,7 @@ export interface IFonts {
 
 export type Unit = 'px' | 'em' | 'rem' | 'pt' | ''
 
-export type UnitMap = {
+export interface UnitMap {
   spacingUnits: Unit,
   typeUnits: Unit,
 }

@@ -10,7 +10,8 @@ const spacing: ISpacing = {
   lg: getSpacingUnits(24),
   xl: getSpacingUnits(32),
   xxl: getSpacingUnits(64),
-  xxxl: getSpacingUnits(128),
+  xxxl: getSpacingUnits(96),
+  xxxxl: getSpacingUnits(128),
 }
 
 export default spacing

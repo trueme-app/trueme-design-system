@@ -12,7 +12,7 @@ export const getBorderUnits = (value: number) => `${value}${units.borderUnits}`
 export const getSpacingUnits = (value: number) => `${value}${units.spacingUnits}`
 
 export const getLineHeight = (value: number, fontSize: number) => {
-  switch(units.typeUnits) {
+  switch (units.typeUnits) {
     case 'rem':
       return value
     default:
@@ -21,11 +21,11 @@ export const getLineHeight = (value: number, fontSize: number) => {
 }
 
 export const getTypeSize = (value: number) => {
-  switch(units.typeUnits) {
+  switch (units.typeUnits) {
     case 'rem':
-      return `${parseFloat((value/units.rootSize).toFixed(3))}${units.typeUnits}`;
+      return `${parseFloat((value / units.rootSize).toFixed(3))}${units.typeUnits}`
     default:
-      return `${value}${units.typeUnits}`;
+      return `${value}${units.typeUnits}`
   }
 }
 
