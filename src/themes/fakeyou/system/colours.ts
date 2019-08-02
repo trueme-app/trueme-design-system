@@ -4,6 +4,9 @@ const colours: IColour = {
   background: '#f3f2ee',
   text: '#09333E',
   inactive: '#CED6D8',
+  error: '#E57568',
+  valid: '#49c5b6',
+  invalid: '#E57568',
   disabled: {
     background: '#E7EBEC',
     text: '#09333E',
