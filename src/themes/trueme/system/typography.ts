@@ -1,5 +1,5 @@
-import { IFonts, ITypography, Unit } from '../../../types'
 import { getLineHeight, getTypeSize } from '../../../system/units'
+import { IFonts, ITypography } from '../../../types'
 
 const fonts: IFonts = {
   body: 'BentonSans',
@@ -31,35 +31,35 @@ const typography: ITypography = {
     },
     h4: {
       font: fonts.body,
-      size: getTypeSize(14),
+      size: getTypeSize(15),
       fontWeight: 600,
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.42, 14),
+      lineHeight: getLineHeight(1.42, 15),
     },
     h5: {
       font: fonts.body,
-      size: getTypeSize(12),
+      size: getTypeSize(14),
       fontWeight: 600,
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.5, 12),
+      lineHeight: getLineHeight(1.5, 11),
     },
   },
   body: {
     base: {
       font: fonts.body,
-      size: getTypeSize(14),
+      size: getTypeSize(16),
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.42, 14),
+      lineHeight: getLineHeight(1.42, 16),
       fontWeight: 'normal',
     },
     bold: {
       font: fonts.body,
-      size: getTypeSize(14),
+      size: getTypeSize(16),
       letterSpacing: 0,
-      lineHeight: getLineHeight(1.42, 14),
+      lineHeight: getLineHeight(1.42, 16),
       fontWeight: 'bold',
-    }
-  }
+    },
+  },
 }
 
 export default typography

@@ -1,5 +1,5 @@
-import { Unit, ISpacing } from '../../../types'
 import { getSpacingUnits } from '../../../system/units'
+import { ISpacing } from '../../../types'
 
 const spacing: ISpacing = {
   xxs: getSpacingUnits(2),
