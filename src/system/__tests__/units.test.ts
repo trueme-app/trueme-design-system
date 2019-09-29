@@ -1,13 +1,14 @@
 import system from '../../index'
 import {
+  calculateParagraphHeight,
   getBorderUnits,
   getLineHeight,
-  getTypeSize,
   getSpacingUnits,
+  getTypeSize,
   setBorderUnits,
+  setRootSize,
   setSpacingUnits,
   setTypeUnits,
-  setRootSize,
 } from '../units'
 
 describe('Web unit tests', () => {
@@ -46,5 +47,15 @@ describe('Web unit tests', () => {
     expect(getLineHeight(1.14, 16)).toBe(1.14)
     setTypeUnits('')
     expect(getLineHeight(1.4, 20)).toBe(28)
+  })
+
+  test('Paragraph heights are correct', () => {
+    setRootSize(16)
+    setTypeUnits('')
+    expect(calculateParagraphHeight(4, 1, 30)).toBe('120')
+    expect(calculateParagraphHeight(10, 1.5, 16)).toBe('240')
+    setTypeUnits('rem')
+    expect(calculateParagraphHeight(4, 1, 30)).toBe('7.5rem')
+    expect(calculateParagraphHeight(10, 1.5, 16)).toBe('15rem')
   })
 })

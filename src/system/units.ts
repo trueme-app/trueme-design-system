@@ -29,6 +29,16 @@ export const getTypeSize = (value: number) => {
   }
 }
 
+export const calculateParagraphHeight = (lines: number, size: number, lineHeight: number) => {
+  const value = ((size * lineHeight) * lines)
+  switch (units.typeUnits) {
+    case 'rem':
+      return `${parseFloat((value / units.rootSize).toFixed(3))}${units.typeUnits}`
+    default:
+      return `${value}${units.typeUnits}`
+  }
+}
+
 export const setBorderUnits = (value: Unit) => {
   units.borderUnits = value
 }
