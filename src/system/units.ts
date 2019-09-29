@@ -29,8 +29,8 @@ export const getTypeSize = (value: number) => {
   }
 }
 
-export const calculateParagraphHeight = (lines: number, size: number, lineHeight: number) => {
-  const value = ((size * lineHeight) * lines)
+export const calculateParagraphHeight = (lines: number, size: number, lineHeight: number, padding: number = 0) => {
+  const value = ((size * lineHeight) * lines) + padding
   switch (units.typeUnits) {
     case 'rem':
       return `${parseFloat((value / units.rootSize).toFixed(3))}${units.typeUnits}`

@@ -60,7 +60,7 @@ export interface ITypeDefinition {
   lineHeight?: number
   letterSpacing?: number
   fontWeight?: string | number
-  calculateParagraphHeight: (lines: number) => number | string
+  calculateParagraphHeight: (lines: number, padding: number) => number | string
 }
 
 export interface ITypography {
