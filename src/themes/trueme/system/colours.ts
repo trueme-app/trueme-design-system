@@ -11,6 +11,12 @@ const colours: IColour = {
     background: '#E7EBEC',
     text: '#09333E',
   },
+  monochrome: {
+    base: '#ffffff',
+    light: '#ffffff',
+    lighter: '#ffffff',
+    text: '#000000',
+  },
   primary: {
     base: '#49c5b6',
     light: '#6dd1c5',
@@ -45,7 +51,13 @@ const colours: IColour = {
     base: '#F7DB79',
     light: '#FCDA99',
     lighter: '#FCE3B1',
-    text: '#000000',
+    text: '#ffffff',
+  },
+  septenary: {
+    base: '#E1B89A',
+    light: '#EDD4C2',
+    lighter: '#F0DCCD',
+    text: '#ffffff',
   },
 }
 

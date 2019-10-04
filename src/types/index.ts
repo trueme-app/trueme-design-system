@@ -46,12 +46,14 @@ export interface IColour {
   valid?: string
   invalid?: string
   disabled?: IColourDefinition
+  monochrome?: IColourDefinition
   primary: IColourDefinition
   secondary: IColourDefinition
   tertiary?: IColourDefinition
   quaternary?: IColourDefinition
   quinary?: IColourDefinition
   senary?: IColourDefinition
+  septenary?: IColourDefinition
 }
 
 export interface ITypeDefinition {

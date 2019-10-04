@@ -47,6 +47,12 @@ const colours: IColour = {
     lighter: '#6AA1A2',
     text: '#ffffff',
   },
+  septenary: {
+    base: '#FFFFFF',
+    light: '#FFFFFF',
+    lighter: '#FFFFFF',
+    text: '#000000',
+  },
 }
 
 export default colours
