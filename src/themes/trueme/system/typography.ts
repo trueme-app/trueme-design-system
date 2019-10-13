@@ -66,6 +66,14 @@ const typography: ITypography = {
       fontWeight: 'bold',
       calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 17, 1.42, padding),
     },
+    small: {
+      font: fonts.body,
+      size: getTypeSize(14),
+      letterSpacing: 0,
+      lineHeight: getLineHeight(1.42, 14),
+      fontWeight: 'normal',
+      calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 14, 1.42, padding),
+    },
   },
 }
 
