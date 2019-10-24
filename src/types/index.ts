@@ -2,6 +2,8 @@ export interface IBorder {
   width: {
     [key: string]: string
     default: string
+    md: string
+    lg: string
   }
   radius: {
     [key: string]: string
