@@ -80,6 +80,7 @@ export interface ITypography {
   }
   body: {
     base: ITypeDefinition
+    subheading?: ITypeDefinition
     bold?: ITypeDefinition
     small?: ITypeDefinition
   }
