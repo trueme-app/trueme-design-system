@@ -1,8 +1,8 @@
 import { setBorderUnits, setSpacingUnits, setTypeUnits } from './system/units'
 
-setBorderUnits('')
-setSpacingUnits('')
-setTypeUnits('')
+setBorderUnits('px')
+setSpacingUnits('px')
+setTypeUnits('px')
 
 import system, { DesignSystemThemeProvider, themes } from './system'
 export { DesignSystemThemeProvider, themes }

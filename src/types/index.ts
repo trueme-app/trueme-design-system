@@ -61,7 +61,7 @@ export interface IColour {
 export interface ITypeDefinition {
   font?: string
   size: string
-  lineHeight?: number
+  lineHeight?: number | string
   letterSpacing?: number
   fontWeight?: string | number
   calculateParagraphHeight: (lines: number, padding: number) => number | string

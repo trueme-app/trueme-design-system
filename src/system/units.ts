@@ -16,7 +16,7 @@ export const getLineHeight = (value: number, fontSize: number) => {
     case 'rem':
       return value
     default:
-      return fontSize * value
+      return `${fontSize * value}${units.typeUnits}`
   }
 }
 
