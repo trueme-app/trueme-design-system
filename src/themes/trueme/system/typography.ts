@@ -3,6 +3,8 @@ import { IFonts, ITypography } from '../../../types'
 
 const fonts: IFonts = {
   body: 'BentonSans',
+  bold: 'BentonSansBold',
+  medium: 'BentonSansMedium',
   heading: 'Butler',
 }
 
@@ -63,15 +65,15 @@ const typography: ITypography = {
       size: getTypeSize(22),
       letterSpacing: 0,
       lineHeight: getLineHeight(1.42, 17),
-      fontWeight: 'bold',
+      fontWeight: 'normal',
       calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 22, 1.42, padding),
     },
     bold: {
-      font: fonts.body,
+      font: fonts.medium,
       size: getTypeSize(17),
       letterSpacing: 0,
       lineHeight: getLineHeight(1.42, 17),
-      fontWeight: 'bold',
+      fontWeight: 'normal',
       calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 17, 1.42, padding),
     },
     small: {

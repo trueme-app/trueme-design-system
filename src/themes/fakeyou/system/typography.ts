@@ -3,6 +3,8 @@ import { IFonts, ITypography } from '../../../types'
 
 const fonts: IFonts = {
   body: 'BentonSans',
+  bold: 'BentonSansBold',
+  medium: 'BentonSans-Medium',
   heading: 'Butler',
 }
 
@@ -59,11 +61,11 @@ const typography: ITypography = {
       calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 17, 1.42, padding),
     },
     bold: {
-      font: fonts.body,
+      font: fonts.bold,
       size: getTypeSize(17),
       letterSpacing: 0,
       lineHeight: getLineHeight(1.42, 17),
-      fontWeight: 'bold',
+      fontWeight: 'normal',
       calculateParagraphHeight: (lines: number, padding: number) => calculateParagraphHeight(lines, 17, 1.42, padding),
     },
   },

@@ -2,11 +2,14 @@ import { IColour } from '../../../types'
 
 const colours: IColour = {
   background: '#f3f2ee',
+  lightBackground: '#fafaf8',
+  inputBorder: '#C3CAD3',
   text: '#09333E',
   inactive: '#CED6D8',
   error: '#E57568',
   valid: '#49c5b6',
   invalid: '#E57568',
+  message: '#E5E5E5',
   disabled: {
     background: '#E7EBEC',
     text: '#09333E',

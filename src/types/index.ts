@@ -30,32 +30,10 @@ export interface ISpacing {
 
 export interface IColourDefinition {
   [key: string]: string | undefined
-  base?: string
-  background?: string
-  light?: string
-  lighter?: string
-  dark?: string
-  darker?: string
-  text?: string
 }
 
 export interface IColour {
   [key: string]: IColourDefinition | string | undefined
-  background?: string
-  text?: string
-  inactive?: string
-  error?: string
-  valid?: string
-  invalid?: string
-  disabled?: IColourDefinition
-  monochrome?: IColourDefinition
-  primary: IColourDefinition
-  secondary: IColourDefinition
-  tertiary?: IColourDefinition
-  quaternary?: IColourDefinition
-  quinary?: IColourDefinition
-  senary?: IColourDefinition
-  septenary?: IColourDefinition
 }
 
 export interface ITypeDefinition {
@@ -98,8 +76,7 @@ export interface ThemeProps {
 }
 
 export interface IFonts {
-  body: string
-  heading: string
+  [key: string]: string
 }
 
 export type Unit = 'px' | 'em' | 'rem' | 'pt' | ''
