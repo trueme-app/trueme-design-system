@@ -46,7 +46,7 @@ describe('Web unit tests', () => {
     setTypeUnits('rem')
     expect(getLineHeight(1.14, 16)).toBe(1.14)
     setTypeUnits('')
-    expect(getLineHeight(1.4, 20)).toBe(28)
+    expect(getLineHeight(1.4, 20)).toBe('28')
   })
 
   test('Paragraph heights are correct', () => {
