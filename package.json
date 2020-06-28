@@ -1,6 +1,6 @@
 {
   "name": "@trueme/design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/trueme-app/trueme-design-system",
   "author": "David Johnson <david@trueme.app>",
   "license": "MIT",
@@ -13,18 +13,18 @@
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-typescript": "^7.6.0",
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-typescript": "^7.10.1",
     "@trueme/tslint-config": "^0.1.2",
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^26.1.0",
     "styled-components": "^5.1.1",
     "ts-jest": "^26.1.1",
@@ -32,14 +32,14 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^5.0.0",
     "tslint-react-recommended": "^1.0.15",
-    "typescript": "^3.6.4"
+    "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@types/react": "^16.9.5",
+    "@types/react": "^16.9.41",
     "@types/styled-components": "^5.1.0"
   },
   "peerDependencies": {
-    "styled-components": "^5.1.1",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "styled-components": "^5.1.1"
   }
 }
